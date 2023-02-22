@@ -268,6 +268,7 @@ ggplot(subset(wiofdat, part!="grain"),
   ylab("Biomass yield (lbs. per acre)")+
   #coord_cartesian(ylim=c(0, 1))+
   ggtitle("Wisconsin On Farm Biomass")+mtheme+
-  theme(axis.title.y=element_text(size=16, color="black"))
+  theme(axis.title.y=element_text(size=16, color="black"),
+        legend.title=element_blank())
 ggsave("Sare_WI_OF_biomassprop.png", width=6, height=6, units="in", path=paste0(twd,"/figures"))
 
